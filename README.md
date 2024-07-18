@@ -9,4 +9,4 @@ This library provides the necessary java libraries for DuitNow integration.
 
 ## Support
 
-This library is provided as is. Integration consultancies and development support is available by contacting us at (<sales@berrypay.com>?subject=DuitNow Integration)
+This library is provided as is. Integration consultancies and development support is available by contacting us at <sales@berrypay.com>
