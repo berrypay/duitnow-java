@@ -16,7 +16,7 @@
   </modules>
 
   <name>duitnow</name>
-  <url>https://github.com/berrypay/duitnow</url>
+  <url>https://github.com/berrypay/duitnow-java</url>
 
   <licenses>
     <license>
@@ -41,6 +41,17 @@
 			scm:git:ssh://github.com:berrypay/duitnow-java.git</developerConnection>
     <url>http://github.com/berrypay/duitnow/tree/main</url>
   </scm>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -128,6 +139,14 @@
         <plugin>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>3.7.0</version>
+          <executions>
+            <execution>
+              <id>attach-javadocs</id>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
       </plugins>
     </pluginManagement>
