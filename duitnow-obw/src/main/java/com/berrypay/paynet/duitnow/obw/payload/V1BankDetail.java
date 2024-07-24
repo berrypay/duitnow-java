@@ -16,32 +16,20 @@ package com.berrypay.paynet.duitnow.obw.payload;
 import lombok.Getter;
 import lombok.Setter;
 
+@Setter
+@Getter
 public class V1BankDetail {
-    @Getter
-    @Setter
     private String code;
 
-    @Getter
-    @Setter
     private String name;
 
-    @Getter
-    @Setter
     private Boolean active;
 
-    @Getter
-    @Setter
     private String browser;
 
-    @Getter
-    @Setter
     private String androidApplicationId;
 
-    @Getter
-    @Setter
     private String iosApplicationId;
 
-    @Getter
-    @Setter
     private V1BankRedirectDetail[] redirectUrls;
 }

@@ -16,16 +16,13 @@ import com.berrypay.paynet.duitnow.payload.V1DuitNowResponseBody;
 import lombok.Getter;
 import lombok.Setter;
 
+@Getter
+@Setter
 public class V1AutoDebitInitiateConsentResponse extends V1DuitNowResponseBody {
-    @Getter
-    @Setter
+
     private String mandateId;
 
-    @Getter
-    @Setter
     private String consentId;
 
-    @Getter
-    @Setter
     private String endToEndIdSignature;
 }

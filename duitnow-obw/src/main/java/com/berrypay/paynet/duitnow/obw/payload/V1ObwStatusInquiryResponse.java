@@ -1,6 +1,6 @@
 /*
  * Project: PayNet DuitNow SDK
- * Filename: /duitnow-obw/src/main/java/com/berrypay/paynet/duitnow/obw/payload/V1ObwInitiatePaymentResponse.java
+ * Filename: /duitnow-obw/src/main/java/com/berrypay/paynet/duitnow/obw/payload/V1ObwStatusInquiryResponse.java
  * Created Date: Wednesday July 17th 2024 18:35:36 +0800
  * Author: Sallehuddin Abdul Latif (sallehuddin@berrypay.com)
  * Company: BerryPay Group of Companies
@@ -19,8 +19,16 @@ import lombok.Setter;
 
 @Setter
 @Getter
-public class V1ObwInitiatePaymentResponse extends V1DuitNowResponseBody {
-    private String endToEndId;
+public class V1ObwStatusInquiryResponse extends V1DuitNowResponseBody {
+    enum TransactionStatus {
+        RECEIVED,
+        CLEARED,
+        REJECTED,
+        PENDAUTH
+    }
 
-    private String endToEndIdSignature;
+    // Only for 864 Transaction Code
+    private String originalTransactionId;
+
+    private TransactionStatus transactionStatus;
 }

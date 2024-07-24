@@ -16,24 +16,16 @@ package com.berrypay.paynet.duitnow.obw.payload;
 import lombok.Getter;
 import lombok.Setter;
 
+@Setter
+@Getter
 public class V1CustomerDetail {
-    @Getter
-    @Setter
     private String name;
 
-    @Getter
-    @Setter
     private String bankType;
 
-    @Getter
-    @Setter
     private String identificationType;
 
-    @Getter
-    @Setter
     private String identification;
 
-    @Getter
-    @Setter
     private String identityValidation;
 }

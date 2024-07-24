@@ -17,16 +17,12 @@ import com.berrypay.paynet.duitnow.payload.V1DuitNowResponseBody;
 import lombok.Getter;
 import lombok.Setter;
 
+@Setter
+@Getter
 public class V1ObwRetrieveBankListResponse extends V1DuitNowResponseBody {
-    @Getter
-    @Setter
     private String endToEndId;
 
-    @Getter
-    @Setter
     private String pageKey;
 
-    @Getter
-    @Setter
     private V1BankDetail[] banks;
 }

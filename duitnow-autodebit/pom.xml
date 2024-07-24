@@ -6,12 +6,11 @@
     <parent>
         <groupId>com.berrypay.paynet.duitnow</groupId>
         <artifactId>duitnow</artifactId>
-        <version>0.1.0</version>
+        <version>0.1.0b</version>
     </parent>
 
-    <groupId>com.berrypay.paynet.duitnow</groupId>
     <artifactId>duitnow-autodebit</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.0b</version>
     <name>duitnow-autodebit</name>
     <packaging>jar</packaging>
 
@@ -24,7 +23,7 @@
         <dependency>
             <groupId>com.berrypay.paynet.duitnow</groupId>
             <artifactId>duitnow-core</artifactId>
-            <version>0.1.0</version>
+            <version>0.1.0b</version>
         </dependency>
     </dependencies>
 

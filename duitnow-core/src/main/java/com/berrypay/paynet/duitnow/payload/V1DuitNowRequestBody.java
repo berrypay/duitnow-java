@@ -16,20 +16,14 @@ package com.berrypay.paynet.duitnow.payload;
 import lombok.Getter;
 import lombok.Setter;
 
+@Setter
+@Getter
 public class V1DuitNowRequestBody {
-    @Getter
-    @Setter
     private String clientId;
 
-    @Getter
-    @Setter
     private String messageId;
 
-    @Getter
-    @Setter
     private String transactionId;
 
-    @Getter
-    @Setter
     private String productId;
 }

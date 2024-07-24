@@ -21,26 +21,18 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
 
+@Setter
+@Getter
 public class V1ConsentDetail {
-    @Getter
-    @Setter
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate effectiveDate;
 
-    @Getter
-    @Setter
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate expiryDate;
 
-    @Getter
-    @Setter
     private String frequency;
 
-    @Getter
-    @Setter
     private String maximumPaymentCurrency;
 
-    @Getter
-    @Setter
     private BigDecimal maximumPaymentAmount;
 }

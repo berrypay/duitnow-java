@@ -16,12 +16,10 @@ import com.berrypay.paynet.duitnow.payload.V1DuitNowRequestQueryParam;
 import lombok.Getter;
 import lombok.Setter;
 
+@Setter
+@Getter
 public class V1AutoDebitConsentEnquiryRequest extends V1DuitNowRequestQueryParam {
-    @Getter
-    @Setter
     private String consentId;
 
-    @Getter
-    @Setter
     private String productId;
 }
